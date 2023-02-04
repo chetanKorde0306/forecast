@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forcast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <!-- Creating a large container  -->
+    <div class="first_container">
+        <!-- For a search button  -->
+        <div class="search-box">
+            <input type="text" class="searchText" id="cityInput" placeholder="Enter the city name " value="London">
+            <button class= "searchBtn" onclick="getData()" >
+                <i class="fas fa-search fa-2x" ></i>
+            </button>
+            <!-- <h2 id="cityName">Mumbai</h2> -->
+        </div>
+
+        <div class="container">
+            <!-- for current wheather data -->
+            <div class="current_forcast">
+                <div id="weather_at">
+                    <h1>Weather in mumbai </h1>
+                </div>
+                <div class="others">
+                    <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather icom" class ="icon"  id="img6" >
+                    <p class="temprature" id ="tempra" >37 °C <span>cloudy</span> </p>
+                    <p id="hum">Humidity : 39%</p>
+                    <p id="speed">Wind Speed : 2.6km/hr</p>
+        
+                </div>
+            </div>
+             <!-- for date and time -->
+             <div class="current-info">
+                <div class="date_container">
+                    <div class="time" id ="time">
+                       12:30  <span id="am-pm">AM</span>
+                    </div>
+                    <div class="date" id="date">
+                       <p> Monday , 14 May</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!-- for future forcast -->
+        
+        <div class="future-forcast">
+           
+            <div class="weather-forcast" id="weather-forcast">
+                <!-- 1 -->
+                <div class="weather-forcast-items" >
+                    <div class="day" id="Day1">tuesday</div>
+                    <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather icom" class ="icon" id="img1">
+                    <div class="temp" id="day1Min">Night -75°C</div>
+                    <div class="temp" id="day1Max">Day- 56.7°C</div> 
+                </div>
+                <!-- 2. -->
+                <div class="weather-forcast-items" >
+                    <div class="day" id="Day2">tuesday</div>
+                    <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather icom" class ="icon" id="img2">
+                    <div class="temp" id="day2Min">Night -75°C</div>
+                    <div class="temp" id="day2Max">Day- 56.7°C</div> 
+                </div>
+                <!-- 3. -->
+                <div class="weather-forcast-items" >
+                    <div class="day" id="Day3">tuesday</div>
+                    <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather icom" class ="icon" id="img3">
+                    <div class="temp" id="day3Min">Night -75°C</div>
+                    <div class="temp" id="day3Max">Day- 56.7°C</div> 
+                </div>
+                <!-- 4. -->
+                <div class="weather-forcast-items">
+                    <div class="day" id="Day4">tuesday</div>
+                    <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather icom" class ="icon"  id="img4" >
+                    <div class="temp" id="day4Min">Night -75°C</div>
+                    <div class="temp" id="day4Max">Day- 56.7°C</div> 
+                </div>
+                <!-- 5.. -->
+                <div class="weather-forcast-items" >
+                    <div class="day" id="Day5" >tuesday</div>
+                    <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather icom" class ="icon" id="img5">
+                    <div class="temp" id="day5Min">Night -75°C</div>
+                    <div class="temp" id="day5Max">Day- 56.7°C</div> 
+                </div>
+               
+
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- <script src="8.js"></script> -->
+    <script src="fetch.js"></script>
+   
+</body>
+
+</html>

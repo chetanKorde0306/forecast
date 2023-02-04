@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+    background-image: url('https://source.unsplash.com/1600x900/?rain landscape');
+    height: auto;
+    
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+}
+/* design the large container  */
+.first_container{
+    box-sizing: border-box;
+    width: 60vw;
+    height: 100%;
+    margin: 30px auto;
+    background-color: rgb(0, 0, 0,0.5);
+    color: white;
+    padding: 0.2rem 0.7rem;
+    backdrop-filter: blur(10px);
+}
+/* for search button */
+.searchBtn{
+   
+    text-decoration: none;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(0, 0, 0,0);
+    color: #fff;
+    position: absolute;
+    border-radius: 5rem;
+    right: 2rem;
+}
+.search-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .searchText{
+     box-sizing: border-box;
+     text-decoration: none;
+     margin: 4vh 2vw;
+     width: 76vw;
+     border: none;
+     border-radius: 31px;
+     height: 46px;
+     padding-left: 2.7rem;
+     box-sizing: border-box;
+     font-family: 'Baloo Bhai 2', cursive;
+     background-color: rgb(0, 0, 0, 0.5);
+     color: white;
+     font-size: 1rem;
+ }
+ .searchText:hover{
+    
+        box-sizing: border-box;
+        width: 80vw;
+        height: 50px;
+        font-size: 2rem;
+    
+
+ } 
+    
+   /* design current time and weather  */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 1.2rem;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+.date_container{
+    font-size: 2rem;
+    font-weight: 100;
+}
+.time{
+    font-size: 3rem;
+}
+#am-pm{
+    font-size: 1.5rem;
+    margin-left: 0.2rem;
+}
+
+/* designing the currnet wheather information */
+
+#weather_at{
+    font-size: 1.5rem;
+}
+.others{
+    font-size: 1rem;
+}
+.temprature{
+    font-size: 2.5rem;
+}
+/* *************************************************************************************************** */
+/* //designing the future forcast  */
+.future-forcast{
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0,0.7);
+    padding: 1.4rem 0.5rem;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.4rem;
+}
+.weather-forcast{
+    box-sizing: border-box;
+}
+.future-forcast .weather-forcast {
+    display: flex;
+    flex-wrap: wrap;
+}
+.weather-forcast .weather-forcast-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    margin: 0 1.0rem;
+    margin: 5px 0.8rem;
+    
+    /* border: 1px solid black; */
+    border: 1px solid #eeeeee73;
+    border-radius: 1.0rem;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+}
+.weather-forcast-items .day{
+    border: 2px solid grey;
+    padding: 2px 2px;
+    border-radius: 14px;
+    background-color: gray;
+    color: rgb(0,0,0,10);
+} 
+/* //defining size of icon     */
+
+.icon{
+    width: 5rem;
+}
+
+
+   
+    
+    
+
